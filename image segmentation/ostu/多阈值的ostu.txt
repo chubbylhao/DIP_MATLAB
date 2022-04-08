@@ -1,0 +1,1 @@
+原理与ostu一样，只是计算代价增加了，MATLAB有现成函数multithresh（基于otsu的多阈值分割>=2）
