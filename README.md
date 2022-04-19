@@ -53,7 +53,15 @@
 
 - **图像特征：** `Harris` 角点检测、 `DoH` 斑点检测、 `LoG` 斑点检测、 `DoG` 斑点检测、 `HOG` 特征、 `LBP` 特征（原始的 `LBP` 、圆形的 `LBP` 、旋转不变的 `LBP` 、等价模式的 `LBP` 以及多尺度分块 `LBP` ）、 `Haar` 特征（积分图像）、 `Moravec` 角点检测、 `ShiTomasi` 角点检测、 `Susan` 角点检测、 `Fast` 角点检测、 `Brief` 描述子、 `Hough` 线变换、 `Hough` 圆变换、 `Ransac` 随机采样一致性、 `Hu` 不变矩、 `gray-matrix` 灰度共生矩阵（还有许多，如 `SIFT` 特征、 `SURF` 特征、 `ORB` 特征（ `Fast` + `Brief` ）、 `MSER` 稳定极值区域、 `Brisk` 、 `Kaze` 、 `Freak` 等等）（另外，像 `canny` 边缘检测算子这种已经见过千百次的算子，只能说相当熟悉，需要的时候直接调包就好）
 
-> `SIFT` 、 `SURF` 和 `ORB` 是未来要编写的三种”复杂、经典“的特征
+—— 后两个括号中的内容本仓库未手动实现（ `Fast` + `Brief` ）除外
+
+> `SIFT` 、 `SURF` 和 `ORB` 是未来要编写的三种”复杂、经典“的特征（尽量实现）
+>
+> 多了解了解人工设计的特征是为了更好地理解图像，而不要直接上手深度学习的黑匣子（多没意思）
+
+![](https://raw.githubusercontent.com/chubbylhao/myPics/40f323bc07390acb22317cd8b75e55d9c8f83a5c/featureDetection/%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81.svg)
+
+<h5 align = "center"> （ 图像特征检测方法综述 ） </h5>
 
 ------
 
