@@ -59,7 +59,7 @@
 >
 > 多了解了解人工设计的特征是为了更好地理解图像，而不要直接上手深度学习的黑匣子（多没意思）
 
-![](https://raw.githubusercontent.com/chubbylhao/myPics/40f323bc07390acb22317cd8b75e55d9c8f83a5c/featureDetection/%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81.svg)
+<div align=center><img src="https://raw.githubusercontent.com/chubbylhao/myPics/40f323bc07390acb22317cd8b75e55d9c8f83a5c/featureDetection/%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81.svg"></div>
 
 <h5 align = "center"> （ 图像特征检测方法综述 ） </h5>
 
