@@ -31,7 +31,7 @@
 
 <h5 align = "center"> （ 图像融合方法综述 ） </h5>
 
-![](https://raw.githubusercontent.com/chubbylhao/myPics/c14d773f330b996504dd39721a4d0673a7e19858/imageFusion/metrics.svg)
+![](https://raw.githubusercontent.com/chubbylhao/myPics/637393017ed3295900ab1af356d2ae44c9658a59/imageFusion/Metrics.svg)
 
 <h5 align = "center"> （ 图像融合质量评价方法综述 ） </h5>
 
@@ -68,6 +68,14 @@
 ------
 
   **内容未完，后续将持续更新~~**
+
+> 感觉后面我该多看看论文了？
+>
+> 感觉后面我该学学 `Python ` 了？
+>
+> 感觉后面我该看看 `C++` 了？
+>
+> —— `2022.04.21` 
 
 ------
 
