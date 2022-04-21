@@ -57,6 +57,8 @@
 
 > `SIFT` 、 `SURF` 和 `ORB` 是未来要编写的三种”复杂、经典“的特征（尽量实现）
 >
+> 附注：（完成情况： `SIFT` 已完成）
+>
 > 多了解了解人工设计的特征是为了更好地理解图像，而不要直接上手深度学习的黑匣子（多没意思）
 
 <div align=center><img src="https://raw.githubusercontent.com/chubbylhao/myPics/05bd31e6d72a7ada8dc1748a5b08400ed1e8b74a/featureDetection/%E5%9B%BE%E5%83%8F%E7%89%B9%E5%BE%81.svg"></div>
