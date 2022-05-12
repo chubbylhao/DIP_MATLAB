@@ -9,8 +9,8 @@ fxy = imfilter(fx.*fy,h);
 H = cell(rows,cols);
 R = zeros(rows,cols);
 for i = 1:numel(img)
-   H{i} = [fx2(i),fxy(i);fxy(i),fy2(i)];
-   R(i) = det(H{i}) - 0.04*(trace(H{i}))^2;
+    H{i} = [fx2(i),fxy(i);fxy(i),fy2(i)];
+    R(i) = det(H{i}) - 0.04*(trace(H{i}))^2;
 end
 w = 3;    % 半窗宽
 label = zeros(rows,cols);

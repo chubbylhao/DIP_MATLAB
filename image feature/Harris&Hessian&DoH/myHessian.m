@@ -2,7 +2,7 @@
 close all; clear; clc;
 img = imread('house.tif');
 if size(img,3) == 3
-    img = rgb2gray(img);
+   img = rgb2gray(img);
 end
 img = double(img);
 

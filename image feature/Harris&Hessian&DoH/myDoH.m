@@ -6,8 +6,8 @@ fxy = imfilter(img,[1;0;-1]*[1,0,-1]/4,'replicate');
 H = cell(rows,cols);
 R = zeros(rows,cols);
 for i = 1:numel(img)
-   H{i} = [fxx(i),fxy(i);fxy(i),fyy(i)];
-   R(i) = det(H{i});    % 计算DoH
+    H{i} = [fxx(i),fxy(i);fxy(i),fyy(i)];
+    R(i) = det(H{i});    % 计算DoH
 end
 w = 3;    % 半窗宽
 label = zeros(rows,cols);
