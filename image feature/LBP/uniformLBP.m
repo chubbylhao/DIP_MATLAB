@@ -1,6 +1,6 @@
 % 使用等价模式的LBP算子（Ojala2002年改进）
 close all; clear; clc;
-img = imread('person.png');
+img = imread('../pics/person.png');
 if size(img,3) == 3
     img = rgb2gray(img);
 end
@@ -8,7 +8,7 @@ img = double(img);
 [rows,cols] = size(img);
 trans_seque = zeros(1,8);
 for k = 1:8
-   trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
+    trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
 end
 % 58种等价模式（映射到1~58）和1种混合模式（映射为0）
 op_num = zeros(1,8);
@@ -18,11 +18,11 @@ for i = 0:255
     dec_num = i;
     for j = 1:8    % 十进制转二进制
         op_num(j) = floor(dec_num/trans_seque(j));
-        dec_num = mod(dec_num,trans_seque(j));  
+        dec_num = mod(dec_num,trans_seque(j));
     end
     if sum(bitxor(op_num,circshift(op_num,1))) <= 2
-       table(i+1) = flag;
-       flag = flag + 1;
+        table(i+1) = flag;
+        flag = flag + 1;
     end
 end
 % 计算LBP描述子

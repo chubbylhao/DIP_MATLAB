@@ -1,6 +1,6 @@
 % 原始LBP算子（Ojala在1994年提出）
 close all; clear; clc;
-img = imread('person.png');
+img = imread('../pics/person.png');
 if size(img,3) == 3
     img = rgb2gray(img);
 end
@@ -8,7 +8,7 @@ img = double(img);
 [rows,cols] = size(img);
 trans_seque = zeros(1,8);
 for k = 1:8
-   trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
+    trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
 end
 LBP_val = zeros(rows,cols);
 for i = 2:rows-1

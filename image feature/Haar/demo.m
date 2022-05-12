@@ -1,5 +1,5 @@
 close all; clear; clc;
-img = imread('face.png');
+img = imread('../pics/face.png');
 if size(img,3) == 3
     img = rgb2gray(img);
 end

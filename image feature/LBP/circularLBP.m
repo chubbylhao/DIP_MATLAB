@@ -1,7 +1,7 @@
 % 圆形LBP算子（Ojala2002年改进）
 % 又叫extendes LBP算子（扩展的LBP算子）
 close all; clear; clc;
-img = imread('person.png');
+img = imread('../pics/person.png');
 if size(img,3) == 3
     img = rgb2gray(img);
 end
@@ -11,7 +11,7 @@ img = double(img);
 % 半径为1的矩形LBP算子，对于更大的图像，其所描绘的纹理细节更加清晰
 trans_seque = zeros(1,8);
 for k = 1:8
-   trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
+    trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
 end
 LBP_val = zeros(rows,cols);
 gray_val = zeros(1,8);

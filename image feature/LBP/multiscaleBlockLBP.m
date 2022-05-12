@@ -1,13 +1,13 @@
 % 多尺度分块LBP算子（由中科院提出），即MB-LBP特征
 close all; clear; clc;
-img = imread('person.png');
+img = imread('../pics/person.png');
 if size(img,3) == 3
     img = rgb2gray(img);
 end
 img = imresize(double(img),0.5);    % 原图计算有点慢，故而缩小一半
 trans_seque = zeros(1,8);
 for k = 1:8
-   trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
+    trans_seque(k) = 2^(8-k);    % 二进制转十进制的权重序列
 end
 LBP_val = zeros(size(img));
 % block块太大，若不进行填充，则浪费的像素点太多
