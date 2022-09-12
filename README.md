@@ -73,6 +73,10 @@
 
 > 这些变换十分重要，多花点时间去理解它们是很有益处的
 
+![](https://raw.githubusercontent.com/chubbylhao/DIP_MATLAB/0540f060ac7ba73e1881d81eec3f59d0e921876c/image%20transformation/image%20transformation.svg)
+
+<h5 align = "center"> （ 常见图像变换方法一览 ） </h5>
+
 ------
 
   **内容未完，后续将持续更新~~**
