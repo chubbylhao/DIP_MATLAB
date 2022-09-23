@@ -1,0 +1,13 @@
+function SN = SlantMatrix(N)
+if N == 2
+    SN = sqrt(1/2)*[1,1;1,-1];
+    return;
+end
+aN = sqrt(3*N^2/(4*(N^2-1)));
+bN = sqrt((N^2-4)/(4*(N^2-1)));
+SN = sqrt(1/2)*[[1,0;aN,bN],zeros(2,N/2-2),[1,0;-aN,bN],zeros(2,N/2-2);...
+     zeros(N/2-2,2),eye(N/2-2),zeros(N/2-2,2),eye(N/2-2);...
+     [0,1;-bN,aN],zeros(2,N/2-2),[0,-1;bN,aN],zeros(2,N/2-2);...
+     zeros(N/2-2,2),eye(N/2-2),zeros(N/2-2,2),eye(N/2-2)]*...
+     [SlantMatrix(N/2),zeros(N/2);zeros(N/2),SlantMatrix(N/2)];
+end
